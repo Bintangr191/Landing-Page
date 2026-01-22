@@ -6,10 +6,17 @@ import { Sparkles, Circle, Menu, X as CloseIcon } from "lucide-react";
 import { NavbarWrapper, BackgroundImage, NavbarContainer, NavbarBox, MenuLogo, MenuMonth, MonthDot, MonthText, MenuItems, SocialIcons, HamburgerButton, MobileMenu, MobileMenuItem,} from "./Navbar.Style";
 import images from "@/public/data";
 
-function Navbar({ onSectionChange }) {
+type NavbarProps = {
+  onSectionChange?: (section: string) => void;
+};
+
+function Navbar({ onSectionChange }: NavbarProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const handleClick = (e, section) => {
+  const handleClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    section: string
+  ) => {
     e.preventDefault();
     if (onSectionChange) {
       onSectionChange(section);
@@ -70,7 +77,7 @@ function Navbar({ onSectionChange }) {
         </NavbarContainer>
       </NavbarWrapper>
 
-      <MobileMenu isOpen={isMobileMenuOpen}>
+      <MobileMenu $isOpen={isMobileMenuOpen}>
         <MobileMenuItem href="#projects" onClick={(e) => handleClick(e, 'projects')}>
           Projects
         </MobileMenuItem>

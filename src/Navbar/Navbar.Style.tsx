@@ -180,10 +180,10 @@ export const HamburgerButton = styled.button`
   }
 `;
 
-export const MobileMenu = styled.div<{ isOpen: boolean }>`
+export const MobileMenu = styled.div<{ $isOpen: boolean }>`
   display: none;
   @media (max-width: 844px) {
-    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+    display: ${({ $isOpen }) => ($isOpen ? 'flex' : 'none')};
     position: absolute;
     top: 71px;
     left: 0;
