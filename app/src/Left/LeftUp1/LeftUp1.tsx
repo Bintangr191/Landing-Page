@@ -1,7 +1,8 @@
 import Image from "next/image";
 import DataImage from "@/public/data";
-import { LeftupWrapper, LeftupContainer, Title, Button, Description} from "./LeftUp1.Style";
+import { LeftupWrapper, LeftupContainer, Title, Button, Description, BackgroundImage, ButtonContent} from "./LeftUp1.Style";
 import { Mailbox } from 'lucide-react';
+import images from "@/public/data";
 
 function LeftUp1() {
   return (
@@ -14,7 +15,14 @@ function LeftUp1() {
             <p>I work mostly in the finance, crypto, stocks, and web3 industries. For me, design isn’t just about looking good — it’s about creating meaningful impact for users.</p>
             </Description>
             <Button>
-                <button><Image src={DataImage.people} alt="people" height={24} /><span>Start a project</span><Mailbox size={32} /></button>
+            <button>
+                <BackgroundImage src={images.background} alt="Navbar Background" fill priority/>
+                <ButtonContent>
+                    <Image src={DataImage.people} alt="people" width={32} height={32} />
+                    <span>Start a project</span>
+                    <Mailbox size={18} />
+                </ButtonContent>
+            </button>
             </Button>
         </LeftupContainer>
       
