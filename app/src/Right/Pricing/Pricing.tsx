@@ -1,14 +1,14 @@
 import Image from "next/image";
 import DataImage from "@/public/data";
-import { PricingContainer, Pricing1 } from "./Pricing.Style";
+import { LayoutContainer, Wrapper } from "../Template/Layout.Style";
 
 function Pricing() {
   return (
-    <PricingContainer>
-        <Pricing1>
+    <LayoutContainer>
+        <Wrapper>
             <Image src={DataImage.pricing} alt="Pricing" />
-        </Pricing1>
-    </PricingContainer>
+        </Wrapper>
+    </LayoutContainer>
   )
 }
 

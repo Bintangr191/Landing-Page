@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutContainer = styled.div`
+export const LayoutContainer = styled.div`
   width: 100%;
   padding: 2rem;
   background: #161616;
@@ -8,7 +8,7 @@ export const AboutContainer = styled.div`
   position: relative;
 `;
 
-export const About1 = styled.div`
+export const Wrapper = styled.div`
   position: relative;
   width: 100%;
   overflow: hidden;

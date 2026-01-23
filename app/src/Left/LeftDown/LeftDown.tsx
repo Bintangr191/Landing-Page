@@ -1,12 +1,6 @@
 import Image from "next/image";
 import DataImage from "@/public/data";
-import { 
-  LeftDownWrapper, 
-  LeftDownContainer, 
-  Section1, 
-  Section2, 
-  Section3 
-} from "./LeftDown.Style";
+import { LeftDownWrapper, LeftDownContainer, Section1, Section2, Section3 } from "./LeftDown.Style";
 
 function LeftDown() {
   return (

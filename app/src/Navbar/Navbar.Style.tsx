@@ -82,7 +82,7 @@ export const MenuMonth = styled.div`
   backdrop-filter: blur(8px);
 
   @media (max-width: 844px) {
-    padding: 0.3rem 0.5rem; /* sedikit lebih kecil */
+    padding: 0.3rem 0.5rem; 
   }
 `;
 
@@ -194,7 +194,7 @@ export const MobileMenu = styled.div<{ $isOpen: boolean }>`
     flex-direction: column;
     padding: 1.5rem 2rem ;
     gap: 1.5rem;
-    z-index: 1000; /* naikin dari 999 */
+    z-index: 1000; 
     overflow-y: auto;
     margin-top: -1px;
 
