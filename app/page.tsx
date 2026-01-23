@@ -2,23 +2,15 @@
 
 import { useState } from "react";
 import images from "@/public/data";
-import Navbar from "@/src/Navbar/Navbar";
-import LeftUp from "@/src/Left/LeftUp/LeftUp";
-import LeftUp1 from "@/src/Left/LeftUp1/LeftUp1";
-import LeftUp2 from "@/src/Left/LeftUp2/LeftUp2";
-import Home1 from "@/src/Right/Home1/Home1";
-import About from "@/src/Right/About/About";
-import Pricing from "@/src/Right/Pricing/Pricing";
-import LeftDown from "@/src/Left/LeftDown/LeftDown";
-import {
-  LeftColumn,
-  RightColumn,
-  Section,
-  ContentWrapper,
-  BackgroundImage,
-  TopContent,
-  BottomContent
-} from "./page.style";
+import Navbar from "@/app/src/Navbar/Navbar";
+import LeftUp from "@/app/src/Left/LeftUp/LeftUp";
+import LeftUp1 from "@/app/src/Left/LeftUp1/LeftUp1";
+import LeftUp2 from "@/app/src/Left/LeftUp2/LeftUp2";
+import Home1 from "@/app/src/Right/Home1/Home1";
+import About from "@/app/src/Right/About/About";
+import Pricing from "@/app/src/Right/Pricing/Pricing";
+import LeftDown from "@/app/src/Left/LeftDown/LeftDown";
+import {LeftColumn, RightColumn, Section, ContentWrapper, BackgroundImage, TopContent,BottomContent} from "./page.style";
 
 export default function Page() {
   const [activeSection, setActiveSection] = useState('home');
