@@ -1,12 +1,12 @@
 import Image from "next/image";
-import DataImage from "@/public/data";
+import images from "@/public/data";
 import { LayoutContainer, Wrapper } from "../Template/Layout.Style";
 
 function About() {
   return (
     <LayoutContainer>
         <Wrapper>
-            <Image src={DataImage.about} alt="about" />
+            <Image src={images.about} alt="about" />
         </Wrapper>
     </LayoutContainer>
   )

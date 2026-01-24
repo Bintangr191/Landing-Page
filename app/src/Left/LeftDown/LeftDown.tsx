@@ -1,5 +1,5 @@
 import Image from "next/image";
-import DataImage from "@/public/data";
+import images from "@/public/data";
 import { LeftDownWrapper, LeftDownContainer, Section1, Section2, Section3 } from "./LeftDown.Style";
 
 function LeftDown() {
@@ -15,7 +15,7 @@ function LeftDown() {
             Aan has excellent taste in visual design, his works will please your eyes at first sight.
           </p>
           <div>
-            <Image src={DataImage.Imagecard} alt="Feri Ardi"/>
+            <Image src={images.Imagecard} alt="Feri Ardi"/>
             <div>
               <p>Feri Ardi</p>
               <p>Head of Design Stockbit & Bibit</p>
@@ -24,7 +24,7 @@ function LeftDown() {
         </Section2>
         
         <Section3>
-          <Image src={DataImage.load} alt="load" />
+          <Image src={images.load} alt="load" />
         </Section3>
       </LeftDownContainer>     
     </LeftDownWrapper>

@@ -19,23 +19,29 @@ export const LeftupWrapper = styled.section`
 
 export const LeftupContainer = styled.div`
     width: 100%;
-    height: auto;
+    height: 365px;
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 10px;
     margin: 0;
     position: relative;
     z-index: 1;
-    padding: 2rem 2rem 0 2rem; 
+    padding: 0.8rem 2rem 1rem 2rem;
+    
+    @media (max-width: 844px) {
+        height: auto; 
+        min-height: 358px; 
+        padding: 1rem 1.5rem; 
+        gap: 12px; 
+    }
 `;
 
 export const Title = styled.div`
     h5 {
         font-family: 'Switzer', sans-serif;
-        font-size: 1.9rem;
-        font-weight: 700;
-        line-height: 1;
-        margin: 0;
+        font-size: 38px;
+        font-weight: 300;
+        line-height: 105%;
         color: #858585;
 
         span {
@@ -44,6 +50,10 @@ export const Title = styled.div`
         -webkit-text-fill-color: transparent;
         background-clip: text;
         font-style: Italic;
+        }
+
+        @media (max-width: 844px) {
+            letter-spacing: 2px; 
         }
     }
 `;
@@ -67,7 +77,7 @@ export const Button = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 4px;
     padding: 0.375rem 0.8rem;
     overflow: hidden;
     
@@ -87,16 +97,16 @@ export const Button = styled.div`
     }
 
     img:not([alt="Navbar Background"]) {
-      width: 32px;
-      height: 32px;
+      width: 22px;
+      height: 22px;
       border-radius: 50%;
       object-fit: cover;
     }
 
     span {
       font-family: 'Switzer', sans-serif;
-      font-size: 0.875rem;
-      font-weight: 500;
+      font-size: 12px;
+      font-weight: 400;
       color: #1a1a1a;
       white-space: nowrap;
       transition: color 0.3s ease;
@@ -113,7 +123,7 @@ export const Button = styled.div`
       background: linear-gradient(135deg, #4ab5e0 0%, #3498d6 100%);
       border-color: rgba(255, 255, 255, 0.8);
       
-      > span:first-child {
+      span:first-child {
         opacity: 0.2;
       }
 
@@ -137,7 +147,7 @@ export const Button = styled.div`
       }        
       
       span {
-        font-size: 0.95rem;
+        font-size: 14px;
       }  
       
       svg {

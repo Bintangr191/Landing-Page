@@ -11,6 +11,7 @@ import About from "@/app/src/Right/About/About";
 import Pricing from "@/app/src/Right/Pricing/Pricing";
 import LeftDown from "@/app/src/Left/LeftDown/LeftDown";
 import {LeftColumn, RightColumn, Section, ContentWrapper, BackgroundImage, TopContent,BottomContent} from "./page.style";
+import LeftUp3 from "./src/Left/LeftUp3/LeftUp3";
 
 export default function Page() {
   const [activeSection, setActiveSection] = useState('home');
@@ -24,9 +25,9 @@ export default function Page() {
       case 'pricing':
         return <LeftUp2 />;
       case 'template':
-        return <LeftUp2 />;
+        return <LeftUp3 />;
       case 'faq':
-        return <LeftUp2 />;
+        return <LeftUp3 />;
       default:
         return <LeftUp />;
     }
@@ -36,12 +37,7 @@ export default function Page() {
     <>
       <Navbar onSectionChange={setActiveSection} />
       <ContentWrapper>
-        <BackgroundImage
-          src={images.background}
-          alt="Navbar Background"
-          fill
-          priority
-        />
+        <BackgroundImage src={images.background} alt="Navbar Background" fill priority/>
         <LeftColumn>
           <TopContent>
             {renderTopContent()}

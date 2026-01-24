@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const LeftDownWrapper = styled.div`
     width: 100%;
-    padding: 1rem;
+    padding: 0.8rem 2rem 0rem 2rem; 
     background: transparent;
 `;
 
@@ -45,7 +45,6 @@ export const Section2 = styled.div`
     0 8px 32px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
   
-  /* quote */
   p:first-child {
     font-size: 18px;
     line-height: 135%;

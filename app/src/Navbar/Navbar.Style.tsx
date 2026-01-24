@@ -64,7 +64,7 @@ export const MenuLogo = styled.div`
     font-weight: 700;
     white-space: nowrap;
     font-family: 'Switzer', sans-serif;
-    letter-spacing: -0.5px;
+    line-height: 105%;
   }
 `;
 
@@ -124,8 +124,9 @@ export const MenuItems = styled.ul`
     a {
       text-decoration: none;
       color: #8b8b8b;
-      font-size: 15px;
+      font-size: 14px;
       transition: color 0.3s ease;
+      line-height: 105%;
 
       &:hover {
         color: #f5f5f5;
@@ -198,7 +199,6 @@ export const MobileMenu = styled.div<{ $isOpen: boolean }>`
     overflow-y: auto;
     margin-top: -1px;
 
-    /* Hide scrollbar */
     &::-webkit-scrollbar {
       display: none;
     }

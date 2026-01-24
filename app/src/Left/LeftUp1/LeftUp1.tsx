@@ -1,5 +1,4 @@
 import Image from "next/image";
-import DataImage from "@/public/data";
 import { LeftupWrapper, LeftupContainer, Title, Button, Description, BackgroundImage, ButtonContent} from "./LeftUp1.Style";
 import { Mailbox } from 'lucide-react';
 import images from "@/public/data";
@@ -18,7 +17,7 @@ function LeftUp1() {
             <button>
                 <BackgroundImage src={images.background} alt="Navbar Background" fill priority/>
                 <ButtonContent>
-                    <Image src={DataImage.people} alt="people" width={32} height={32} />
+                    <Image src={images.people} alt="people" width={32} height={32} />
                     <span>Start a project</span>
                     <Mailbox size={18} />
                 </ButtonContent>

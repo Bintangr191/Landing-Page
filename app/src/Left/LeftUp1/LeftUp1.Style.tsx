@@ -3,7 +3,6 @@ import Image from "next/image";
 
 export const LeftupWrapper = styled.section`
     width: 100%;
-    height: auto; 
     background: linear-gradient(110deg,#1a1a1a 0%, #1f1f1f 40%, #252525 100%);
     display: flex;
     align-items: flex-start;
@@ -18,14 +17,21 @@ export const LeftupWrapper = styled.section`
 
 export const LeftupContainer = styled.div`
     width: 100%;
-    height: auto;
-    padding: 2rem 2rem 0 2rem;
+    height: 365px;
     display: flex;
     flex-direction: column;
     gap: 0;
     margin: 0;
     position: relative;
     z-index: 1;
+    padding: 0.8rem 2rem 1rem 2rem; 
+
+    @media (max-width: 844px) {
+        height: auto; 
+        min-height: 358px; 
+        padding: 1rem 1.5rem; 
+        gap: 12px; 
+    }
 `;
 
 export const Title = styled.div`
@@ -33,11 +39,16 @@ export const Title = styled.div`
     
     p {
         font-family: 'Switzer', sans-serif;
-        font-size: 20px;
-        font-weight: 200;
-        line-height: 1.5;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 105%;
         margin: 0;
         color: #aaaaaa;
+
+        @media (max-width: 844px) {
+            font-size: 28px;
+            line-height: 120%;
+        }
     }
 `;
 
@@ -46,11 +57,16 @@ export const Description = styled.div`
     
     p {
         font-family: 'Switzer', sans-serif;
-        font-size: 17.5px;
-        font-weight: 200;
-        line-height: 1.5;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 105%;
         margin: 0;
         color: #737373;
+
+          @media (max-width: 844px) {
+            font-size: 28px;
+            line-height: 120%;
+        }
     }
 `;
 

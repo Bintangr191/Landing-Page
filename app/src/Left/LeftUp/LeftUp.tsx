@@ -1,5 +1,4 @@
 import Image from "next/image";
-import DataImage from "@/public/data";
 import { LeftupWrapper, LeftupContainer, Title, Button, Service, ServiceItem, IconWrapper, Icon, Icon1, BackgroundImage, ButtonContent} from "./LeftUp.style";
 import { Mailbox } from 'lucide-react';
 import images from "@/public/data";
@@ -15,9 +14,9 @@ function LeftUp() {
             <button>
                 <BackgroundImage src={images.background} alt="Navbar Background" fill priority/>
                 <ButtonContent>
-                    <Image src={DataImage.people} alt="people" width={32} height={32} />
+                    <Image src={images.people} alt="people"/>
                     <span>Start a project</span>
-                    <Mailbox size={18} />
+                    <Mailbox/>
                 </ButtonContent>
             </button>
             </Button>
@@ -43,35 +42,35 @@ function LeftUp() {
             </Service>
             <IconWrapper>
                 <Icon>
-                    <Image src={DataImage.logos.bibit} alt="Bibit" />
+                    <Image src={images.logos.bibit} alt="Bibit" />
                 </Icon>
 
                 <Icon>
-                    <Image  src={DataImage.logos.stockbit} alt="Stockbit" />
+                    <Image  src={images.logos.stockbit} alt="Stockbit" />
                 </Icon>
 
                 <Icon>
-                    <Image src={DataImage.logos.univus} alt="Univus" />
+                    <Image src={images.logos.univus} alt="Univus" />
                 </Icon>
 
                 <Icon>
-                    <Image src={DataImage.logos.regentech} alt="RegenTech" />
+                    <Image src={images.logos.regentech} alt="RegenTech" />
                 </Icon>
 
                 <Icon>
-                    <Image src={DataImage.logos.maskGroup} alt="iCHEF" />
+                    <Image src={images.logos.maskGroup} alt="iCHEF" />
                 </Icon>
 
                 <Icon>
-                    <Image src={DataImage.logos.yuro} alt="Yuro" />
+                    <Image src={images.logos.yuro} alt="Yuro" />
                 </Icon>
 
                 <Icon>
-                    <Image src={DataImage.logos.valdaze} alt="Validaze" />
+                    <Image src={images.logos.valdaze} alt="Validaze" />
                 </Icon>
 
                 <Icon>
-                    <Image src={DataImage.logos.kanu} alt="Kanu" />
+                    <Image src={images.logos.kanu} alt="Kanu" />
                 </Icon>
 
                 <Icon1>
