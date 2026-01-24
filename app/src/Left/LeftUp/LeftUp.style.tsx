@@ -26,7 +26,7 @@ export const LeftupContainer = styled.div`
     margin: 0;
     position: relative;
     z-index: 1;
-    padding: 0.8rem 2rem 1rem 2rem;
+    padding: 0.8rem 2.1rem 1rem 2rem;
     
     @media (max-width: 844px) {
         height: auto; 
@@ -213,7 +213,7 @@ export const ServiceItem = styled.div`
 export const IconWrapper = styled.div`
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.8rem;
     margin-top: 0.5rem;
     flex-wrap: wrap;
     opacity: 0.6;

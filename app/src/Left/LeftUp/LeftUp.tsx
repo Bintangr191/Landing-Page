@@ -66,6 +66,10 @@ function LeftUp() {
                 </Icon>
 
                 <Icon>
+                    <Image src={images.logos.akin} alt="akin" />
+                </Icon>
+
+                <Icon>
                     <Image src={images.logos.valdaze} alt="Validaze" />
                 </Icon>
 
